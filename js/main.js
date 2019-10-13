@@ -76,7 +76,7 @@ function listEm(item, counter) {
 
 document.getElementById('jumboWrapper').style.display = "none";
 document.getElementById('listPlaceHolder').style.display = "block";
-document.querySelector(".typoInput").addEventListener('keyup', function() {
+document.querySelector(".typoInput").addEventListener('input', function() {
 
     if(document.querySelector('.typoInput').value !== "") {
    
