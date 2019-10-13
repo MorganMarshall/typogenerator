@@ -89,7 +89,7 @@ document.querySelector(".typoInput").addEventListener('keyup', function() {
     }
 
     getTypos(str);
-    
+
 });
 
 function copyDivToClipboard() {
