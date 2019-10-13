@@ -9,7 +9,7 @@ function getTypos(str) {
  "use strict";
     String.prototype.replaceAt=function(index, char) {
 	    return this.substr(0, index) + char + this.substr(index+char.length);
-    }
+    };
 
     var array_prox = [];
     array_prox['a'] = ['q', 'w', 'z', 'x'];
