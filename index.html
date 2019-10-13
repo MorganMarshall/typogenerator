@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Find common typos and misspellings for words and numbers with typo generator, a free to use tool.">
+    <meta name="keywords" content="typo generator, misspelling generator, typos, misspellings, web app, free tool, keyword typos, keyword typo generator, online tool">
+    <title>TypoGenerator.io</title>
+    <link rel="canonical" href="https://www.typogenerator.io">
+    <link rel="stylesheet preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="css/cover.css" rel="stylesheet preconnect">
+</head>
+
+<body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <header class="masthead">
+            <div class="inner">
+                <h3 class="masthead-brand">TypoGenerator.io</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link" href="/about">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <main role="main" class="inner cover">
+            <i style="font-size: 128px;" class="fas fa-robot"></i>
+            <br><br>
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control typoInput" placeholder="Enter a word or number, example: starship"
+                    aria-label="search typos" aria-describedby="basic-addon2">
+                <div style="background-color: rgba(255,255,255, 0.1)" class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><i style="opacity: 0.3;" class="fa fa-search"></i></span>
+                </div>
+            </div>
+            <br>
+            <div style="border-radius: 6px; padding-top:11px; padding-bottom:10px; background-color: rgb(51, 51, 51); filter:brightness(70%)"
+                class="jumbotron jumbotron-fluid">
+                <div id="buttonDiv" style="float:right; margin-right:12px;">
+                    <button onclick="copyDivToClipboard()"
+                        class="btn copy-button btn-secondary btn-sm" type="button"><i class="fas fa-copy"></i>
+                        copy</button>
+                    </div>
+                <div class="container">
+                    <div id="typoWrap" style="text-align: left;">
+                        <ul id="jumboWrapper" class="typoListWrapper"></ul>
+                                <ul id="listPlaceHolder" >
+                                    <li>starsnip</li>
+                                    <li>starshil</li>
+                                    <li>starstip</li>
+                                    <li>sfarship</li>
+                                    <li>ctarship</li>
+                                    <li>staesjip</li>
+                                    <li>stxrship</li>
+                                    <li>starzhio</li>
+                                    <li>stadship</li>
+                                    <li>starxhip</li>
+                                    <li>starshup</li>
+                                    <li>starsmip</li>
+                                    <li>ztarship</li>
+                                </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p><i class="fas fa-dice-d20"></i>&nbsp;TypoGenerator.io | <span id="currentYear"></span></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
