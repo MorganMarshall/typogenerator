@@ -1,20 +1,16 @@
 var newDate = new Date();
 var currentYear = newDate.getFullYear();
-
 document.getElementById("currentYear").innerText = currentYear;
 
 var str;
 function getTypos(str) {
   var str = document.querySelector(".typoInput").value;
-
-  
  document.querySelector('.typoListWrapper').innerHTML = "";
    
     String.prototype.replaceAt=function(index, char) {
 	    return this.substr(0, index) + char + this.substr(index+char.length);
     }
 
-    //define proximity arrays
     var array_prox = [];
     array_prox['a'] = ['q', 'w', 'z', 'x'];
     array_prox['b'] = ['v', 'f', 'g', 'h', 'n'];
@@ -63,7 +59,9 @@ function getTypos(str) {
 	}
 
 var cleanArray = arr.sort(function(a, b){return 0.5 - Math.random()});
+
 var counter = 0;
+
 cleanArray.forEach(listEm);
 
 function listEm(item, counter) {
@@ -73,7 +71,7 @@ function listEm(item, counter) {
   document.querySelector('.typoListWrapper').innerHTML += "<li style='font-size: 24px;'>" + item + "</li>";
 
         }
-}
+    }
 }
 
 document.getElementById('jumboWrapper').style.display = "none";
@@ -91,6 +89,7 @@ document.querySelector(".typoInput").addEventListener('keyup', function() {
     }
 
     getTypos(str);
+    
 });
 
 function copyDivToClipboard() {
