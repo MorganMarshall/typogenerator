@@ -66,7 +66,6 @@ cleanArray.forEach(listEm);
 
 function listEm(item, counter) {
     counter++;
-    console.log(counter)
     if (counter < 14) {
   document.querySelector('.typoListWrapper').innerHTML += "<li style='font-size: 24px;'>" + item + "</li>";
 
