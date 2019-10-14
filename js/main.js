@@ -6,6 +6,7 @@ document.getElementById("currentYear").innerText = currentYear;
 var str;
 function getTypos(str) {
    str = document.querySelector(".typoInput").value;
+   str = str.toLowerCase();
  document.querySelector('.typoListWrapper').innerHTML = "";
 
     String.prototype.replaceAt=function(index, char) {
