@@ -5,7 +5,7 @@ document.getElementById("currentYear").innerText = currentYear;
 
 var str;
 function getTypos(str) {
-  var str = document.querySelector(".typoInput").value;
+   str = document.querySelector(".typoInput").value;
  document.querySelector('.typoListWrapper').innerHTML = "";
 
     String.prototype.replaceAt=function(index, char) {
