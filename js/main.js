@@ -1,3 +1,4 @@
+"use strict";
 var newDate = new Date();
 var currentYear = newDate.getFullYear();
 document.getElementById("currentYear").innerText = currentYear;
@@ -6,7 +7,7 @@ var str;
 function getTypos(str) {
   var str = document.querySelector(".typoInput").value;
  document.querySelector('.typoListWrapper').innerHTML = "";
- "use strict";
+
     String.prototype.replaceAt=function(index, char) {
 	    return this.substr(0, index) + char + this.substr(index+char.length);
     };
