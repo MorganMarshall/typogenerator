@@ -49,6 +49,8 @@ function getTypos(str) {
     array_prox['8'] = ['u', 'i', 'o'];
     array_prox['9'] = ['i', 'o', 'p'];
     array_prox['0'] = ['o', 'p'];
+    array_prox[' '] = [' '];
+    array_prox['-'] = ['-'];
 
     var arr = [];
 
@@ -93,13 +95,16 @@ document.querySelector(".typoInput").addEventListener('input', function() {
 
 });
 
-function copyDivToClipboard() {
+// function copyDivToClipboard() {
+
+// }
+
+
+document.querySelector(".copy-button").addEventListener("click", function() {
     var range = document.createRange();
     range.selectNode(document.getElementById("typoWrap"));
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
-}
-
-
+})
