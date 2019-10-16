@@ -93,7 +93,7 @@ body {
 }
 
 .mastfoot {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .typoInput {
@@ -151,4 +151,14 @@ li {
 
 .align-left {
   text-align: left;
+}
+
+.about-link {
+  color: #FFFFFF !important;
+  opacity: 0.8;
+}
+
+.home-link {
+  color: #FFFFFF !important;
+  opacity: 0.8;
 }
