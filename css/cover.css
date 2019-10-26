@@ -74,6 +74,11 @@ body {
   border-bottom-color: #fff;
 }
 
+.cover {
+  padding: 0 1.5rem;
+  margin-top: 0%;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
@@ -81,12 +86,15 @@ body {
   .nav-masthead {
     float: right;
   }
+
+  .cover {
+    padding: 0 1.5rem;
+    margin-top: 7%;
+  }
+
 }
 
-.cover {
-  padding: 0 1.5rem;
-  margin-top: 5%;
-}
+
 .cover .btn-lg {
   padding: 0.75rem 1.25rem;
   font-weight: 700;
@@ -161,4 +169,8 @@ li {
 .home-link {
   color: #FFFFFF !important;
   opacity: 0.8;
+}
+
+.bottom-description {
+  padding-top: 16px;
 }
