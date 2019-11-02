@@ -11,11 +11,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#333333"/>
     <link rel="canonical" href="https://www.typogenerator.io">
-    <link rel="stylesheet preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link href="css/cover.css" rel="stylesheet preconnect">
+    <!-- <link rel="stylesheet preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link href="css/main.css" rel="stylesheet preconnect">
 </head>
 
 <body class="text-center">
@@ -82,6 +82,8 @@
  
     </div>
 
+    <!-- <link rel="stylesheet preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
+
     <script src="js/main.js"></script>
 
     <script type="application/ld+json">
@@ -104,6 +106,10 @@
 
         }
         </script>
-
+        <script>
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('/service-worker.js')
+            }
+          </script>
 </body>
 </html>

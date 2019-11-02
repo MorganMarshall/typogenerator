@@ -95,11 +95,6 @@ document.querySelector(".typoInput").addEventListener('input', function() {
 
 });
 
-// function copyDivToClipboard() {
-
-// }
-
-
 document.querySelector(".copy-button").addEventListener("click", function() {
     var range = document.createRange();
     range.selectNode(document.getElementById("typoWrap"));
