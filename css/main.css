@@ -265,3 +265,7 @@ li {
   text-decoration: none !important;
   
 }
+
+.copy-button {
+  cursor:pointer;
+}
