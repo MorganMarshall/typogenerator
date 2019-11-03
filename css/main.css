@@ -257,3 +257,11 @@ li {
   padding-top: 20px;
   font-size:14px;
 }
+
+.twitter-follow-button {
+  background-color: #1DA1F2;
+  padding: 3px 11px;
+  font-size:12px;
+  text-decoration: none !important;
+  
+}
