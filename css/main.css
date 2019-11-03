@@ -260,9 +260,10 @@ li {
 
 .twitter-follow-button {
   background-color: #242424;
-  padding: 3px 11px;
+  padding: 5px 11px 7px 11px;
   font-size:12px;
   text-decoration: none !important;
+  border-radius: 1px;
   
 }
 
