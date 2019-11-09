@@ -270,3 +270,8 @@ li {
 .copy-button {
   cursor:pointer;
 }
+
+.masthead-brand {
+  font-size: 1.75rem;
+  margin-top:0;
+}
